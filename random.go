@@ -60,6 +60,10 @@ func RandomDigits(length int) []byte {
 	return randomBytesMod(length, 10)
 }
 
+func RandomBytes(length int) []byte {
+	return randomBytes(length)
+}
+
 // randomBytes returns a byte slice of the given length read from CSPRNG.
 func randomBytes(length int) (b []byte) {
 	b = make([]byte, length)
