@@ -102,6 +102,10 @@ func randomBytesMod(length int, mod byte) (b []byte) {
 
 }
 
+func RandomId() string {
+	return randomId()
+}
+
 // randomId returns a new random id string.
 func randomId() string {
 	b := randomBytesMod(idLen, byte(len(idChars)))
